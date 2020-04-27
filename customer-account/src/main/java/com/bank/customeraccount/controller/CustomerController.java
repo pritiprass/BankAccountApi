@@ -1,4 +1,4 @@
-package com.wipro.customeraccount.controller;
+package com.bank.customeraccount.controller;
 import java.net.URI;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,9 +11,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+import com.bank.customeraccount.entity.Customer;
+import com.bank.customeraccount.service.CustomerService;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.wipro.customeraccount.entity.Customer;
-import com.wipro.customeraccount.service.CustomerService;
 @RestController
 public class CustomerController {
 	@Autowired

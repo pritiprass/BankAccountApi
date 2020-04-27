@@ -1,4 +1,4 @@
-package com.wipro.customeraccount.entity;
+package com.bank.customeraccount.entity;
 public class Transfer {
 	private int fromAccount;
 	private int toAccount;

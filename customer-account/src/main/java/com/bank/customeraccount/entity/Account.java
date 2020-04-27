@@ -1,4 +1,4 @@
-package com.wipro.customeraccount.entity;
+package com.bank.customeraccount.entity;
 import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;

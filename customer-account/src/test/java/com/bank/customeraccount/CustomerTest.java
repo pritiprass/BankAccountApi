@@ -1,4 +1,4 @@
-package com.wipro.customeraccount;
+package com.bank.customeraccount;
 import java.util.Iterator;
 import java.util.Optional;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
@@ -7,8 +7,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import com.wipro.customeraccount.entity.Customer;
-import com.wipro.customeraccount.repository.CustomerRepository;
+
+import com.bank.customeraccount.entity.Customer;
+import com.bank.customeraccount.repository.CustomerRepository;
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 public class CustomerTest {
@@ -21,11 +22,11 @@ public class CustomerTest {
 		Customer customer1 = new Customer();
 		customer1.setFirstName("Akash");
 		customer1.setLastName("Raj");
-		customer1.setEmail("akash@wipro.com");
+		customer1.setEmail("akash@gmail.com");
 		Customer customer2 = new Customer();
 		customer2.setFirstName("Pemi");
 		customer2.setLastName("Kalyan");
-		customer2.setEmail("pemi@wipro.com");
+		customer2.setEmail("pemi@gmail.com");
 		customerRepository.save(customer1);
 		customerRepository.save(customer2);
 	}
@@ -53,7 +54,7 @@ public class CustomerTest {
 		Customer customer = customers.get();
 		customer.setFirstName("Deepika");
 		customer.setLastName("Puhan");
-		customer.setEmail("deepika@wipro.com");
+		customer.setEmail("deepika@gmail.com");
 		customerRepository.save(customer);
 		System.out.println("Updated customer is " + customer);
 	}

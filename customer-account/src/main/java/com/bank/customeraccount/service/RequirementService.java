@@ -1,16 +1,17 @@
-package com.wipro.customeraccount.service;
+package com.bank.customeraccount.service;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.wipro.customeraccount.exception.CustomerNotFound;
-import com.wipro.customeraccount.entity.Account;
-import com.wipro.customeraccount.entity.Customer;
-import com.wipro.customeraccount.entity.Transfer;
-import com.wipro.customeraccount.repository.AccountRepository;
-import com.wipro.customeraccount.repository.CustomerRepository;
+
+import com.bank.customeraccount.entity.Account;
+import com.bank.customeraccount.entity.Customer;
+import com.bank.customeraccount.entity.Transfer;
+import com.bank.customeraccount.exception.CustomerNotFound;
+import com.bank.customeraccount.repository.AccountRepository;
+import com.bank.customeraccount.repository.CustomerRepository;
 @Service
 public class RequirementService {
 	@Autowired

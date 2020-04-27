@@ -1,4 +1,4 @@
-package com.wipro.customeraccount;
+package com.bank.customeraccount;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

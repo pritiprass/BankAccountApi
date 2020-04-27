@@ -1,4 +1,4 @@
-package com.wipro.customeraccount.controller;
+package com.bank.customeraccount.controller;
 import java.util.List;
 import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,11 +8,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.wipro.customeraccount.entity.Account;
-import com.wipro.customeraccount.entity.Customer;
-import com.wipro.customeraccount.entity.Transfer;
-import com.wipro.customeraccount.service.CustomerService;
-import com.wipro.customeraccount.service.RequirementService;
+
+import com.bank.customeraccount.entity.Account;
+import com.bank.customeraccount.entity.Customer;
+import com.bank.customeraccount.entity.Transfer;
+import com.bank.customeraccount.service.CustomerService;
+import com.bank.customeraccount.service.RequirementService;
 @RestController
 public class RequirementController {
 	@Autowired

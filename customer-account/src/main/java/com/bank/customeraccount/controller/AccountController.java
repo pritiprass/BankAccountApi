@@ -1,4 +1,4 @@
-package com.wipro.customeraccount.controller;
+package com.bank.customeraccount.controller;
 
 import java.net.URI;
 import java.util.List;
@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.wipro.customeraccount.entity.Account;
-import com.wipro.customeraccount.repository.AccountRepository;
-import com.wipro.customeraccount.service.AccountService;
+import com.bank.customeraccount.entity.Account;
+import com.bank.customeraccount.repository.AccountRepository;
+import com.bank.customeraccount.service.AccountService;
 
 @RestController
 public class AccountController {

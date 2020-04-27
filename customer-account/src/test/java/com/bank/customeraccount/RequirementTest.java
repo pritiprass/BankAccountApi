@@ -1,4 +1,4 @@
-package com.wipro.customeraccount;
+package com.bank.customeraccount;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Optional;
@@ -10,11 +10,12 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import com.wipro.customeraccount.entity.Account;
-import com.wipro.customeraccount.entity.Customer;
-import com.wipro.customeraccount.entity.Transfer;
-import com.wipro.customeraccount.repository.AccountRepository;
-import com.wipro.customeraccount.repository.CustomerRepository;
+
+import com.bank.customeraccount.entity.Account;
+import com.bank.customeraccount.entity.Customer;
+import com.bank.customeraccount.entity.Transfer;
+import com.bank.customeraccount.repository.AccountRepository;
+import com.bank.customeraccount.repository.CustomerRepository;
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 public class RequirementTest {
@@ -28,11 +29,11 @@ public class RequirementTest {
 		Customer customer1 = new Customer();
 		customer1.setFirstName("Mohan");
 		customer1.setLastName("Krishna");
-		customer1.setEmail("mohan@wipro.com");
+		customer1.setEmail("mohan@gmail.com");
 		Customer customer2 = new Customer();
 		customer2.setFirstName("Nikhil");
 		customer2.setLastName("Vikash");
-		customer2.setEmail("nikhil@wipro.com");
+		customer2.setEmail("nikhil@gmail.com");
 		Account account1 = new Account();
 		account1.setAccountType("Saving");
 		account1.setBalance(500000);

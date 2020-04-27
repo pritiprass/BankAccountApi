@@ -1,12 +1,13 @@
-package com.wipro.customeraccount.service;
+package com.bank.customeraccount.service;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.bank.customeraccount.entity.Customer;
+import com.bank.customeraccount.exception.CustomerNotFound;
+import com.bank.customeraccount.repository.CustomerRepository;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.wipro.customeraccount.exception.CustomerNotFound;
-import com.wipro.customeraccount.entity.Customer;
-import com.wipro.customeraccount.repository.CustomerRepository;
 @Service
 @JsonIgnoreProperties(value = { "accounts" })
 public class CustomerService {

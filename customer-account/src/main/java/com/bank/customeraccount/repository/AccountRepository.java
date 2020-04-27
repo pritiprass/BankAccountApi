@@ -1,8 +1,8 @@
-package com.wipro.customeraccount.repository;
+package com.bank.customeraccount.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.wipro.customeraccount.entity.Account;
+import com.bank.customeraccount.entity.Account;
 
 public interface AccountRepository extends CrudRepository<Account, Integer> {
 

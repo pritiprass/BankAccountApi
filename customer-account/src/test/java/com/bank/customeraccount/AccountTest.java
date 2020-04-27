@@ -1,4 +1,4 @@
-package com.wipro.customeraccount;
+package com.bank.customeraccount;
 import java.util.Iterator;
 import java.util.Optional;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
@@ -7,8 +7,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import com.wipro.customeraccount.entity.Account;
-import com.wipro.customeraccount.repository.AccountRepository;
+
+import com.bank.customeraccount.entity.Account;
+import com.bank.customeraccount.repository.AccountRepository;
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 public class AccountTest {

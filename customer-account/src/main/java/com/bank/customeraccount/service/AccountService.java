@@ -1,10 +1,11 @@
-package com.wipro.customeraccount.service;
+package com.bank.customeraccount.service;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.wipro.customeraccount.entity.Account;
-import com.wipro.customeraccount.repository.AccountRepository;
+
+import com.bank.customeraccount.entity.Account;
+import com.bank.customeraccount.repository.AccountRepository;
 @Service
 public class AccountService {
 	@Autowired
