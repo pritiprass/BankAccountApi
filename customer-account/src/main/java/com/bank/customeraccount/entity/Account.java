@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @Entity
 public class Account {
@@ -17,7 +19,6 @@ public class Account {
 	private double balance;
 	@ManyToMany(mappedBy = "accounts", cascade = CascadeType.ALL)
 	@JsonIgnore
-	
 	private Set<Customer> customers;
 	public int getAccountNumber() {
 		return accountNumber;

@@ -8,6 +8,9 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 @Entity
 public class Customer {
 	@Id
@@ -19,7 +22,7 @@ public class Customer {
 	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "customer_account", joinColumns = @JoinColumn(name = "customer_id"), inverseJoinColumns = @JoinColumn(name = "account_number"))
 	
-	
+	@JsonInclude(value=Include.NON_NULL)
 	private Set<Account> accounts;
 	public int getCustomerId() {
 		return customerId;
