@@ -1,5 +1,6 @@
 package com.bank.customeraccount;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Optional;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
@@ -30,16 +31,17 @@ public class AccountTest {
 	@Test
 	@Order(2)
 	void test_getAccounts() {
-		Iterable<Account> accounts = accountRepository.findAll();
-		Iterator<Account> account = accounts.iterator();
-		while (account.hasNext()) {
-			System.out.println(account.next());
+		List<Account> accounts=(List<Account>) accountRepository.findAll();
+		for(Account temp:accounts)
+		{
+			System.out.println(temp);
 		}
+		
 	}
 	@Test
 	@Order(3)
 	void test_getAccount() {
-		Optional<Account> accounts = accountRepository.findById(1);
+		Optional<Account> accounts = accountRepository.findById(2);
 		Account account = accounts.get();
 		System.out.println(account);
 	}

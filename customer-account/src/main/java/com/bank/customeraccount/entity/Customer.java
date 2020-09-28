@@ -21,7 +21,6 @@ public class Customer {
 	private String email;
 	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "customer_account", joinColumns = @JoinColumn(name = "customer_id"), inverseJoinColumns = @JoinColumn(name = "account_number"))
-	
 	@JsonInclude(value=Include.NON_NULL)
 	private Set<Account> accounts;
 	public int getCustomerId() {

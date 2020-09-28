@@ -17,7 +17,7 @@ public class Account {
 	private int accountNumber;
 	private String accountType;
 	private double balance;
-	@ManyToMany(mappedBy = "accounts", cascade = CascadeType.ALL)
+	@ManyToMany(mappedBy = "accounts", cascade = {CascadeType.DETACH,CascadeType.PERSIST,CascadeType.REFRESH,CascadeType.REMOVE})
 	@JsonIgnore
 	private Set<Customer> customers;
 	public int getAccountNumber() {
